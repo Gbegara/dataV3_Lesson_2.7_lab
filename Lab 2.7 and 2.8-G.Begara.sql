@@ -8,7 +8,7 @@ ON f.film_id=fc.film_id
 JOIN sakila.category c
 ON  c.category_id=fc.category_id
 GROUP BY Category
-ORDER BY 'Number of films';
+ORDER BY `Number of films` DESC;
 
 -- 2. Display the total amount rung up by each staff member in August of 2005.
 SELECT SUM(p.amount) AS 'Total amount', s.first_name AS 'First Name', s.last_name AS 'Last Name'
